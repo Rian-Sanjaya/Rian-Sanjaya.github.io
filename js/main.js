@@ -2,7 +2,30 @@ $(document).ready(function() {
 	handleShowHideSidebar();
 	handleSideBarMenuClick();
   handleTyping();
+	onScrollInit($("#about .description p"), $("#about .description"));
+	onScrollInit($(".ag"), $(".animated-group"));
 });
+
+$(".photo").waypoint(function(direction) {
+	if (direction === "down") {
+		$(this).removeClass("fadeOut");
+		$(this).addClass("fadeInLeft");
+	} else {
+		$(this).addClass("fadeOut");
+		$(this).removeClass("fadeInLeft");
+	}
+},
+{offset: "90%"});
+
+// $("a.button-available").waypoint(function(direction) {
+// 		if (direction === "down") {
+// 			$(this).removeClass("fadeOutDownBig");
+// 			$(this).addClass("fadeInUpBig");
+// 		} else {
+// 			$(this).removeClass("fadeInUpBig");
+// 			$(this).addClass("fadeOutDownBig");
+// 		}
+// }, {offset: "80%"});
 
 function handleShowHideSidebar() {
   var $menuButton = $(".menu-button i"),
@@ -53,5 +76,34 @@ function handleTyping () {
     loop: true,
     showCursor: true,
     cursorChar: "|"
+  });
+}
+
+function onScrollInit( items, trigger ) {
+  items.each( function() {
+    var osElement = $(this),
+        osAnimationClass = osElement.attr('data-os-animation'),
+        osAnimationDelay = osElement.attr('data-os-animation-delay');
+
+    osElement.css({
+        '-webkit-animation-delay':  osAnimationDelay,
+        '-moz-animation-delay':     osAnimationDelay,
+        'animation-delay':          osAnimationDelay
+    });
+
+    var osTrigger = ( trigger ) ? trigger : osElement;
+
+    osTrigger.waypoint(function(direction) {
+			if (direction === "down") {
+				osElement.removeClass("fadeOut");
+				osElement.addClass("show").addClass(osAnimationClass);
+			} else {
+					osElement.addClass("fadeOut");
+					osElement.removeClass("show").removeClass(osAnimationClass);
+			}
+    },{
+        // triggerOnce: true,
+        offset: '90%'
+    });
   });
 }

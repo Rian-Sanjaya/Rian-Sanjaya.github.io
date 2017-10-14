@@ -39,42 +39,48 @@
 			</div>
 		</div>
 		<div id="about" class="content">
-			<div class="photo-sec"><img class="photo" src="assets/photo.jpg"/></div>
+			<div class="photo-sec"><img class="photo animated" src="assets/photo.jpg"/></div>
 			<div class="description">
-				<p>I am a Software Engineer with years of working experiences coding for desktop applications with use of sql database server extensively. Most of my coding are build upon VB.Net and Ms SQL Server.</p>
-				<p>Lately I discover my passion to become a web developer and start teaching myself web development. I am passionate to become a proficient Fullstack Web Developer and create a web application that is useful for many others to use. I am available for a Junior Web Developer or accepting projects to work together.</p>
+				<p class="animated" data-os-animation="fadeInRight" data-os-animation-delay="0">I am a Software Engineer with years of working experiences coding for desktop applications with use of sql database server extensively. Most of my coding are build upon VB.Net and Ms SQL Server.</p>
+				<p class="animated" data-os-animation="fadeInRight" data-os-animation-delay="0.5s">Lately I discover my passion to become a web developer and start teaching myself web development. I am passionate to become a proficient Fullstack Web Developer and create a web application that is useful for many others to use. I am available for a Junior Web Developer or accepting projects to work together.</p>
 			</div>
-			<div class="available"><a href="#contact" class="button-available">I'm available for Hire</a></div>
-			<div>
-				<h3>Self taught skills</h3>
-				<div class="skill">
-					<img class="html5" src="assets/html5.png"/><br>HTML5
+			<div class="animated-group">
+				<div class="available">
+					<a href="#contact" class="button-available ag animated" data-os-animation="fadeInUpBig" data-os-animation-delay="0">I'm available for Hire</a>
 				</div>
-				<div class="skill">
-					<img class="css3" src="assets/css3.png"/><br>CSS3
+				<div>
+					<h3 class="ag animated" data-os-animation="fadeInUpBig" data-os-animation-delay="0.3s">Self taught skills</h3>
+					<div class="ag animated" data-os-animation="fadeInUpBig" data-os-animation-delay="0.6s">
+						<div class="skill">
+							<img class="html5 " src="assets/html5.png"/><br>HTML5
+						</div>
+						<div class="skill">
+							<img class="css3" src="assets/css3.png"/><br>CSS3
+						</div>
+						<div class="skill">
+							<img class="bootstrap" src="assets/bootstrap.png"/><br>Bootstrap
+						</div>
+						<div class="skill">
+							<img class="js" src="assets/js.png"/><br>JavaScript
+						</div>
+						<div class="skill">
+							<img class="jquery" src="assets/jquery.png"/><br>jQuery
+						</div>
+						<div class="skill">
+							<img class="git" src="assets/git.png"/><br>git
+						</div>
+						<div class="skill">
+							<img class="github" src="https://raw.githubusercontent.com/Rian-Sanjaya/FCCPortfolio/master/assets/GitHub.png"/><br>GitHub
+						</div>
+					</div>
 				</div>
-				<div class="skill">
-					<img class="bootstrap" src="assets/bootstrap.png"/><br>Bootstrap
-				</div>
-				<div class="skill">
-					<img class="js" src="assets/js.png"/><br>JavaScript
-				</div>
-				<div class="skill">
-					<img class="jquery" src="assets/jquery.png"/><br>jQuery
-				</div>
-				<div class="skill">
-					<img class="git" src="assets/git.png"/><br>git
-				</div>
-				<div class="skill">
-					<img class="github" src="https://raw.githubusercontent.com/Rian-Sanjaya/FCCPortfolio/master/assets/GitHub.png"/><br>GitHub
-				</div>
-			</div>
-			<div class="cert-group">
-				<h3>Online Certification</h3>
-				<div class="cert">
-					<a href="https://www.freecodecamp.org/rian-sanjaya/front-end-certification" target="_blank">
-						<img src="assets/FCCFrontEndCert_rs.jpg"><br>freeCodeCamp Front End Development
-					</a>
+				<div class="cert-group">
+					<h3 class="ag animated" data-os-animation="fadeInUpBig" data-os-animation-delay="0.9s">Online Certification</h3>
+					<div class="cert ag animated" data-os-animation="fadeInUpBig" data-os-animation-delay="1.2s">
+						<a href="https://www.freecodecamp.org/rian-sanjaya/front-end-certification" target="_blank">
+							<img src="assets/FCCFrontEndCert_rs.jpg"><br>freeCodeCamp Front End Development
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -84,13 +90,10 @@
 				<div class="portfolio-item">
 					<div>
 						<a href="https://rawgit.com/Rian-Sanjaya/ImageGallery/master/image-gallery.html" target="_blank">
-							<img class="img-responsive center-block img-portfolio" src="assets/imageGallery_rs.JPG">
+							<img class="img-responsive center-block img-portfolio" src="assets/imageGallery_rs.jpg">
 							<div class="portfolio-desc">Image Gallery<br><span>HTML5, CSS3, Bootstrap</span></div>
 						</a>
 					</div>
-					<!-- <div class="panel-footer">
-						<p>HTML5, CSS3, JavaScript, jQuery</p>
-					</div> -->
 				</div>
 				<div class="portfolio-item">
 					<div>
@@ -198,7 +201,8 @@
 		</footer>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
