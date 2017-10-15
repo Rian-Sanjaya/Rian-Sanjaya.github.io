@@ -475,7 +475,7 @@ form input {
 	font-size: 1.5rem;
 }
 #name, #email, #phone {
-  width: 50%;
+  width: 100%;
 	padding: 2px 3px;
 }
 textarea {
@@ -493,6 +493,9 @@ textarea {
 	padding: 8px 11px;
 }
 #thankyou_message { font-weight: 700; }
+@media screen and (min-width: 801px) {
+		#name, #email, #phone { width: 50%; }
+}
 
 footer {
   color: white;
