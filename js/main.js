@@ -64,7 +64,7 @@ function handleSideBarMenuClick() {
 
 function handleTyping () {
   $(".element").typed({
-    strings: ["a Software Engineer.", "a Web Developer."],
+    strings: ["an IT Programmer.", "a Web Developer."],
     // typing speed
     typeSpeed: 90,
     // time before typing starts
