@@ -322,30 +322,35 @@ a.button-available:hover {
 	font-weight: 500;
 	margin-right: 20px;
 }
-.html5,
-.css3,
-.rails {
-	width: 40px;
-	height: 46px;
-}
 .bootstrap,
-.js,
-.git,
-.github {
+.js {
 	width: 40px;
 	height: 40px;
 }
-.jquery {
-	width: 40px;
-	height: 38px;
-}
-.reactjs, .nodejs {
+.reactjs {
 	width: 80px;
 	height: 55px;
 }
 .redux {
 	width: 48px;
 	height: 48px;
+}
+.typescript {
+	width: 50px;
+	height: 50px;
+}
+.cypress {
+	width: 80px;
+	height: 29px;
+}
+.vue {
+	width: 43px;
+}
+.ant-design {
+	width: 45px;
+}
+.graphql {
+	width: 45px;
 }
 .cert-group { margin-top: 50px; }
 .cert {
