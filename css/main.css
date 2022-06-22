@@ -295,6 +295,7 @@ a.button-available {
 	text-transform: uppercase;
 	transition: .4s ease-out;
 	text-decoration: none;
+	text-align: center;
 }
 a.button-available:hover {
 	/*width: 282.33px;*/
