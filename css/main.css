@@ -431,6 +431,7 @@ a.button-available:hover {
 .tile:focus,
 .tile:hover .details span { opacity: 1; top: 0; }
 .tile:hover::before { opacity: 1; top: 50%; }
+.tile.higher:hover::before { opacity: 1; top: 25%; height: 75%; }
 .tile:hover .title { transition-delay: .15s }
 .tile:hover .info { transition-delay: .25s }
 @media screen and (min-width: 801px) {
