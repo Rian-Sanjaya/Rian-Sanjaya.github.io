@@ -432,13 +432,13 @@ a.button-available:hover {
 	font-weight: 600;
 	font-size: 1.2rem;
 }
-.tile .info {
+.tile .details .info {
 	line-height: 1.2;
 	margin-top: 5px;
 	font-size: 0.9rem;
 	font-style: italic;
 }
-.tile .feature {
+.tile .details .feature {
 	line-height: 1;
 	margin-top: 5px;
 	font-size: 0.7rem;
