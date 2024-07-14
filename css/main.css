@@ -365,9 +365,18 @@ a.button-available:hover {
 #portfolio {
 	background-color: #eee;
 }
+
+/* .portfolio-section {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+} */
+
 .portfolio-item {
 	display: inline-block;
 	width: 99%;
+	/* width: 100%; */
 	height: auto;
 	/*margin-right: 20px;*/
 	margin-bottom: 20px;
@@ -379,7 +388,8 @@ a.button-available:hover {
 	background: linear-gradient(
 				to bottom,
 				rgba(0,0,0,0) 0%,
-				rgba(0,0,0,0.7) 100%
+				rgba(0,0,0,0.9) 100%
+				/* rgba(0,0,0,0.7) 100% */
 			);
 	width: 100%;
 	height: 50%;
@@ -420,13 +430,18 @@ a.button-available:hover {
 .tile .title {
 	line-height: 1;
 	font-weight: 600;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 .tile .info {
 	line-height: 1.2;
 	margin-top: 5px;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-style: italic;
+}
+.tile .feature {
+	line-height: 1;
+	margin-top: 5px;
+	font-size: 0.7rem;
 }
 .tile:focus,
 .tile:hover .details span { opacity: 1; top: 0; }
@@ -434,6 +449,7 @@ a.button-available:hover {
 .tile.higher:hover::before { opacity: 1; top: 25%; height: 75%; }
 .tile:hover .title { transition-delay: .15s }
 .tile:hover .info { transition-delay: .25s }
+
 @media screen and (min-width: 801px) {
 	.portfolio-item {
 		width: 300px;
